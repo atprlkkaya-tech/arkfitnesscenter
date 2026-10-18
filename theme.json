@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json.schemastore.org/theme-v1.json",
+  "name": "ARK Fitness Center Design System",
+  "version": "1.0.0",
+  "brand": {
+    "name": "ARK Fitness Center",
+    "location": "Beyşehir, Konya, Türkiye",
+    "phone": "+90 542 695 95 02",
+    "whatsapp": "+90 542 695 95 02",
+    "established": 2014,
+    "founder": "Ramazan KARAÇELİK (Selçuk Üniversitesi BESYO Yüksek Lisans, 3. Kademe Kıdemli Antrenör)"
+  },
+  "colors": {
+    "primary": {
+      "default": "#FFD400",
+      "hover": "#FFE033",
+      "dark": "#D4AF00",
+      "light": "#FFF385",
+      "rgb": "255, 212, 0",
+      "hsl": "50, 100%, 50%",
+      "description": "ARK Fitness Karakteristik Güç Sarısı (Butonlar, vurgular, çizgiler, ikonlar)"
+    },
+    "background": {
+      "deep": "#0A0A0A",
+      "card": "#121212",
+      "cardHover": "#191919",
+      "surface": "#1E1E1E",
+      "darkOverlay": "rgba(10, 10, 10, 0.85)"
+    },
+    "text": {
+      "primary": "#FFFFFF",
+      "secondary": "#E4E4E7",
+      "muted": "#A1A1AA",
+      "dim": "#71717A",
+      "goldGradient": "linear-gradient(135deg, #FFF6A3 0%, #FFD400 50%, #C89900 100%)"
+    },
+    "borders": {
+      "subtle": "rgba(255, 255, 255, 0.08)",
+      "primary": "rgba(255, 212, 0, 0.3)",
+      "primaryHover": "rgba(255, 212, 0, 0.7)"
+    },
+    "sessions": {
+      "female": {
+        "color": "#EC4899",
+        "bg": "rgba(236, 72, 153, 0.15)",
+        "border": "rgba(236, 72, 153, 0.4)",
+        "name": "Bayan Seansları"
+      },
+      "male": {
+        "color": "#3B82F6",
+        "bg": "rgba(59, 130, 246, 0.15)",
+        "border": "rgba(59, 130, 246, 0.4)",
+        "name": "Erkek Seansları"
+      },
+      "closed": {
+        "color": "#EF4444",
+        "bg": "rgba(239, 68, 68, 0.15)",
+        "name": "Pazar Günü Kapalı"
+      }
+    },
+    "social": {
+      "whatsapp": "#25D366",
+      "whatsappHover": "#1EBE5D"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "heading": "'Oswald', 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif",
+      "body": "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "numeric": "'Oswald', monospace"
+    },
+    "weights": {
+      "regular": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700,
+      "extrabold": 800,
+      "black": 900
+    },
+    "lineHeights": {
+      "tight": 0.95,
+      "snug": 1.2,
+      "normal": 1.5,
+      "relaxed": 1.65
+    },
+    "letterSpacing": {
+      "tight": "-0.02em",
+      "normal": "0",
+      "wide": "0.05em",
+      "wider": "0.1em",
+      "widest": "0.25em"
+    }
+  }
+}

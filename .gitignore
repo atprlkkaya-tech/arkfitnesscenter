@@ -1,0 +1,28 @@
+# Bağımlılıklar
+node_modules/
+.pnp
+.pnp.js
+
+# Vercel
+.vercel
+
+# İşletim Sistemi Dosyaları
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+
+# IDE ve Editör Dosyaları
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Log Dosyaları
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log

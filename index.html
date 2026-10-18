@@ -1,0 +1,1707 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARK Fitness Center | Beyşehir'in En Kapsamlı Spor Tesisi</title>
+  <meta name="description" content="ARK Fitness Center - Beyşehir, Konya. 2014'ten beri fitness, vücut geliştirme, kilo alma, kilo verme, pilates, zumba ve 3. Kademe Kıdemli Antrenör eşliğinde Personal Training.">
+  <meta name="keywords" content="Ark Fitness Center, Beyşehir spor salonu, Beyşehir fitness, Ramazan Karaçelik, vücut geliştirme Beyşehir, bayan seansları, erkek seansları, pilates, zumba, personal training">
+  <meta name="author" content="ARK Fitness Center">
+  <meta name="theme-color" content="#FFD400">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook / WhatsApp Preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ARK Fitness Center | Beyşehir'in En Kapsamlı Spor Tesisi">
+  <meta property="og:description" content="Beyşehir'de 2014'ten beri uzman antrenörlerle kadın & erkek özel seansları, vücut geliştirme ve birebir Personal Training.">
+  <meta property="og:image" content="assets/images/logo.jpg">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:site_name" content="ARK Fitness Center">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ARK Fitness Center | Beyşehir">
+  <meta name="twitter:description" content="GÜCÜNÜ KEŞFET. SINIRLARINI AŞ. Beyşehir'in en kapsamlı fitness ve vücut geliştirme tesisi.">
+  <meta name="twitter:image" content="assets/images/logo.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+  
+  <!-- Google Fonts: Oswald, Montserrat, Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brandYellow: '#FFD400',
+            brandYellowHover: '#FFE033',
+            brandBlack: '#0A0A0A',
+            brandDark: '#121212',
+            brandSurface: '#18181B',
+            brandBorder: 'rgba(255, 212, 0, 0.25)',
+          },
+          fontFamily: {
+            heading: ['Oswald', 'Montserrat', 'sans-serif'],
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-brandBlack text-zinc-100 font-sans selection:bg-brandYellow selection:text-black">
+
+  <!-- ==========================================================================
+       ÜST BİLGİ VE CANLI DURUM ÇUBUĞU (TOP BAR)
+       ========================================================================== -->
+  <div class="bg-zinc-950 border-b border-zinc-900 py-2 text-xs text-zinc-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-3">
+        <!-- Canlı Seans Durum Rozeti -->
+        <span class="live-gym-badge inline-flex items-center gap-2 px-2.5 py-1 rounded-full text-[11px] font-semibold">
+          <span class="live-dot live-dot-green"></span>
+          <span>Seans Durumu Kontrol Ediliyor...</span>
+        </span>
+        <span class="hidden md:inline text-zinc-600">|</span>
+        <span class="hidden md:inline text-zinc-400 flex items-center gap-1.5">
+          <i class="fa-solid fa-clock text-brandYellow"></i>
+          <span id="liveClock">Yükleniyor...</span>
+        </span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="https://maps.google.com/?q=Bey%C5%9Fehir+Konya+Ark+Fitness" target="_blank" class="hover:text-brandYellow transition flex items-center gap-1">
+          <i class="fa-solid fa-location-dot text-brandYellow"></i> Beyşehir, Konya
+        </a>
+        <span class="text-zinc-700">•</span>
+        <a href="tel:+905426959502" class="hover:text-brandYellow transition flex items-center gap-1 font-medium">
+          <i class="fa-solid fa-phone text-brandYellow"></i> +90 542 695 95 02
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       NAVBAR (ÜST MENÜ)
+       ========================================================================== -->
+  <header id="mainHeader" class="sticky top-0 z-50 bg-[#0A0A0A]/90 backdrop-blur-md border-b border-white/5 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo -->
+        <a href="#hero" class="flex items-center gap-3.5 group">
+          <div class="relative w-12 h-12 rounded-full overflow-hidden border-2 border-brandYellow shadow-[0_0_15px_rgba(255,212,0,0.3)] transition duration-300 group-hover:scale-105">
+            <img src="assets/images/logo.jpg" alt="ARK Fitness Center Logo" class="w-full h-full object-cover">
+          </div>
+          <div>
+            <div class="font-heading text-xl md:text-2xl font-bold tracking-wider leading-none text-white group-hover:text-brandYellow transition">
+              ARK <span class="text-brandYellow">FITNESS</span>
+            </div>
+            <div class="text-[10px] tracking-[0.25em] text-zinc-400 uppercase font-medium">
+              CENTER • BEYŞEHİR
+            </div>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-8">
+          <a href="#hero" class="text-sm font-medium tracking-wide text-zinc-300 hover:text-brandYellow transition">Ana Sayfa</a>
+          <a href="#seanslar" class="text-sm font-medium tracking-wide text-zinc-300 hover:text-brandYellow transition flex items-center gap-1.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-brandYellow"></span> Seans Saatleri
+          </a>
+          <a href="#hakkimizda" class="text-sm font-medium tracking-wide text-zinc-300 hover:text-brandYellow transition">Hakkımızda & Kurucu</a>
+          <a href="#hizmetler" class="text-sm font-medium tracking-wide text-zinc-300 hover:text-brandYellow transition">Branşlarımız</a>
+          <a href="#kurallar" class="text-sm font-medium tracking-wide text-zinc-300 hover:text-brandYellow transition">Salon Kuralları</a>
+          <a href="#uyelik" class="text-sm font-medium tracking-wide text-zinc-300 hover:text-brandYellow transition">Üyelik</a>
+          <a href="#iletisim" class="text-sm font-medium tracking-wide text-zinc-300 hover:text-brandYellow transition">İletişim</a>
+        </nav>
+
+        <!-- Right Side CTA -->
+        <div class="hidden lg:flex items-center gap-3">
+          <a href="https://wa.me/905426959502?text=Merhaba%20ARK%20Fitness%20Center%2C%20seanslar%20ve%20%C3%BCyelik%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." 
+             target="_blank" 
+             class="btn-gold px-5 py-2.5 rounded-lg text-sm flex items-center gap-2 shadow-lg">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+            <span>WhatsApp ile Bilgi Al</span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobileMenuBtn" class="lg:hidden p-2 rounded-lg text-zinc-300 hover:text-brandYellow hover:bg-zinc-900 transition focus:outline-none" aria-label="Menüyü Aç/Kapat">
+          <i class="fa-solid fa-bars text-2xl text-brandYellow"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-zinc-950 border-b border-zinc-800 px-4 pt-3 pb-6 transition-all duration-300">
+      <div class="flex flex-col gap-3">
+        <!-- Canlı durum mobil -->
+        <div class="p-3 bg-zinc-900 rounded-lg border border-zinc-800 flex items-center justify-between text-xs mb-2">
+          <span class="text-zinc-400">Canlı Durum:</span>
+          <span class="live-gym-badge inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold">
+            <span class="live-dot live-dot-green"></span>
+            <span>Kontrol Ediliyor...</span>
+          </span>
+        </div>
+        <a href="#hero" class="mobile-nav-link text-zinc-200 hover:text-brandYellow py-2 px-3 rounded-md hover:bg-zinc-900 transition">Ana Sayfa</a>
+        <a href="#seanslar" class="mobile-nav-link text-brandYellow font-medium py-2 px-3 rounded-md hover:bg-zinc-900 transition flex items-center justify-between">
+          <span>Seans Saatleri (Erkek & Kadın)</span>
+          <i class="fa-solid fa-clock text-xs"></i>
+        </a>
+        <a href="#hakkimizda" class="mobile-nav-link text-zinc-200 hover:text-brandYellow py-2 px-3 rounded-md hover:bg-zinc-900 transition">Hakkımızda & Kurucu</a>
+        <a href="#hizmetler" class="mobile-nav-link text-zinc-200 hover:text-brandYellow py-2 px-3 rounded-md hover:bg-zinc-900 transition">Hizmetlerimiz & Branşlar</a>
+        <a href="#kurallar" class="mobile-nav-link text-zinc-200 hover:text-brandYellow py-2 px-3 rounded-md hover:bg-zinc-900 transition">Salon Kuralları</a>
+        <a href="#hesaplayici" class="mobile-nav-link text-zinc-200 hover:text-brandYellow py-2 px-3 rounded-md hover:bg-zinc-900 transition">BMI & Kalori Hesapla</a>
+        <a href="#uyelik" class="mobile-nav-link text-zinc-200 hover:text-brandYellow py-2 px-3 rounded-md hover:bg-zinc-900 transition">Üyelik Paketleri</a>
+        <a href="#iletisim" class="mobile-nav-link text-zinc-200 hover:text-brandYellow py-2 px-3 rounded-md hover:bg-zinc-900 transition">İletişim & Konum</a>
+        
+        <div class="pt-3 border-t border-zinc-800 flex flex-col gap-2">
+          <a href="https://wa.me/905426959502?text=Merhaba%20ARK%20Fitness%20Center%2C%20seanslar%20ve%20%C3%BCyelik%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." 
+             target="_blank" 
+             class="btn-gold w-full py-3 rounded-lg text-center flex items-center justify-center gap-2">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+            <span>WhatsApp ile Bilgi Al</span>
+          </a>
+          <a href="tel:+905426959502" class="btn-dark w-full py-2.5 rounded-lg text-center text-sm">
+            <i class="fa-solid fa-phone text-brandYellow"></i> Hemen Ara: +90 542 695 95 02
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO BÖLÜMÜ (İLK İZLENİM)
+       ========================================================================== -->
+  <section id="hero" class="relative min-h-[92vh] flex items-center justify-center bg-grid-pattern overflow-hidden">
+    <!-- Arka plan görseli & overlay -->
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1920&auto=format&fit=crop" 
+           alt="ARK Fitness Center Salon Atmosferi" 
+           class="w-full h-full object-cover object-center opacity-30 scale-105 filter grayscale contrast-125">
+      <div class="absolute inset-0 hero-overlay"></div>
+    </div>
+
+    <!-- Sarı ambiyans ışığı efekti -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-96 h-96 bg-brandYellow/15 rounded-full blur-[140px] pointer-events-none"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+      
+      <!-- Konum & Kuruluş Rozeti -->
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-zinc-900/90 border border-brandBorder mb-8 backdrop-blur-md shadow-lg animate-fade-in">
+        <span class="w-2 h-2 rounded-full bg-brandYellow animate-ping"></span>
+        <i class="fa-solid fa-location-dot text-brandYellow text-xs"></i>
+        <span class="text-xs sm:text-sm font-semibold tracking-wider text-zinc-200 uppercase">
+          BEYŞEHİR'İN ÖNCÜ SPOR TESİSİ • 2014'TEN BERİ
+        </span>
+      </div>
+
+      <!-- Ana Başlık -->
+      <h1 class="font-heading text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight uppercase leading-[0.95] text-white mb-6">
+        GÜCÜNÜ KEŞFET.<br>
+        <span class="gold-gradient-text">SINIRLARINI AŞ.</span>
+      </h1>
+
+      <!-- Alt Başlık -->
+      <p class="max-w-2xl mx-auto text-base sm:text-lg md:text-xl text-zinc-300 font-light mb-10 leading-relaxed">
+        Beyşehir’de hedeflerine odaklan, kendi gücünü ortaya çıkar. ARK Fitness Center’da sana uygun üyelik seçeneklerini ve kadın-erkek özel seanslarını keşfet.
+      </p>
+
+      <!-- CTA Butonları -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto mb-14">
+        <a href="#uyelik" class="btn-gold w-full sm:w-auto px-8 py-4 rounded-xl text-base shadow-xl">
+          <span>Üyelik Paketlerini İncele</span>
+          <i class="fa-solid fa-arrow-right text-xs"></i>
+        </a>
+        <a href="https://wa.me/905426959502?text=Merhaba%20ARK%20Fitness%20Center%2C%20web%20sitenizden%20yaz%C4%B1yorum.%20Seanslar%20ve%20kay%C4%B1t%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." 
+           target="_blank" 
+           class="btn-dark w-full sm:w-auto px-8 py-4 rounded-xl text-base">
+          <i class="fa-brands fa-whatsapp text-lg text-brandYellow"></i>
+          <span>WhatsApp’tan Bilgi Al</span>
+        </a>
+      </div>
+
+      <!-- Canlı Seans Bilgi Kartı (Hero İçi) -->
+      <div class="max-w-3xl mx-auto ark-card rounded-2xl p-5 border border-zinc-800/80 shadow-2xl">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center text-left">
+          
+          <div class="border-b sm:border-b-0 sm:border-r border-zinc-800 pb-3 sm:pb-0 sm:pr-4">
+            <div class="text-[11px] uppercase tracking-wider text-zinc-400 font-semibold mb-1 flex items-center gap-1.5">
+              <i class="fa-solid fa-door-open text-brandYellow"></i> Mevcut Salon Durumu
+            </div>
+            <div id="liveCurrentSession" class="text-base sm:text-lg font-bold text-white font-heading">
+              Kontrol Ediliyor...
+            </div>
+          </div>
+
+          <div class="border-b sm:border-b-0 sm:border-r border-zinc-800 pb-3 sm:pb-0 sm:pr-4">
+            <div class="text-[11px] uppercase tracking-wider text-zinc-400 font-semibold mb-1 flex items-center gap-1.5">
+              <i class="fa-solid fa-forward text-brandYellow"></i> Sonraki Aşama
+            </div>
+            <div id="liveNextInfo" class="text-xs sm:text-sm font-medium text-zinc-300">
+              Hesaplanıyor...
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between sm:justify-end gap-2">
+            <a href="#seanslar" class="text-xs font-semibold uppercase tracking-wider text-brandYellow hover:underline flex items-center gap-1">
+              Tüm Çizelgeyi Gör <i class="fa-solid fa-chevron-right text-[10px]"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Hızlı Vurgular (Stats Bar) -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mt-14 pt-10 border-t border-zinc-800/60">
+        <div class="text-center">
+          <div class="font-heading text-3xl md:text-4xl font-bold text-brandYellow">2014</div>
+          <div class="text-xs text-zinc-400 uppercase tracking-wider mt-1">Kuruluş & Tecrübe</div>
+        </div>
+        <div class="text-center">
+          <div class="font-heading text-3xl md:text-4xl font-bold text-white">3. KADEME</div>
+          <div class="text-xs text-zinc-400 uppercase tracking-wider mt-1">Kıdemli Baş Antrenör</div>
+        </div>
+        <div class="text-center">
+          <div class="font-heading text-3xl md:text-4xl font-bold text-brandYellow">ÖZEL SEANS</div>
+          <div class="text-xs text-zinc-400 uppercase tracking-wider mt-1">Erkek & Kadın Ayrı Saatler</div>
+        </div>
+        <div class="text-center">
+          <div class="font-heading text-3xl md:text-4xl font-bold text-white">BEYŞEHİR</div>
+          <div class="text-xs text-zinc-400 uppercase tracking-wider mt-1">Şehrin Güç Merkezi</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SEANS SAATLERİ (EN ÖNEMLİ VE KRİTİK BÖLÜM)
+       ========================================================================== -->
+  <section id="seanslar" class="py-24 bg-zinc-950 relative border-t border-zinc-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Bölüm Başlığı -->
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-bold tracking-[0.25em] text-brandYellow uppercase">
+          ZAMANINI VERİMLİ KULLAN
+        </span>
+        <h2 class="font-heading text-3xl sm:text-5xl font-extrabold uppercase mt-2 mb-4 text-white">
+          HAFTALIK <span class="text-brandYellow">SEANS SAATLERİ</span>
+        </h2>
+        <div class="w-16 h-1 bg-brandYellow mx-auto mb-6"></div>
+        <p class="text-zinc-400 text-sm sm:text-base leading-relaxed">
+          ARK Fitness Center bünyesinde kadın ve erkek üyelerimiz için planlanan seanslar aşağıda belirtilmiştir. Pazar günleri salonumuz kapalıdır.
+        </p>
+
+        <!-- Tab Filtre Butonları -->
+        <div class="inline-flex p-1.5 rounded-xl bg-zinc-900 border border-zinc-800 mt-6 shadow-inner">
+          <button data-tab="all" class="schedule-tab-btn active px-4 sm:px-6 py-2 rounded-lg text-xs sm:text-sm font-heading font-semibold tracking-wider uppercase transition bg-brandYellow text-black">
+            Yan Yana Görünüm
+          </button>
+          <button data-tab="female" class="schedule-tab-btn px-4 sm:px-6 py-2 rounded-lg text-xs sm:text-sm font-heading font-semibold tracking-wider uppercase transition text-zinc-400 hover:text-white">
+            Kadın Seansları
+          </button>
+          <button data-tab="male" class="schedule-tab-btn px-4 sm:px-6 py-2 rounded-lg text-xs sm:text-sm font-heading font-semibold tracking-wider uppercase transition text-zinc-400 hover:text-white">
+            Erkek Seansları
+          </button>
+        </div>
+      </div>
+
+      <!-- Seans Kartları Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+        
+        <!-- =================== KADIN SEANSLARI KARTI =================== -->
+        <div id="femaleScheduleCard" class="ark-card rounded-2xl overflow-hidden border border-zinc-800 flex flex-col transition duration-300">
+          
+          <!-- Kart Başlığı -->
+          <div class="bg-gradient-to-r from-pink-950/40 via-zinc-900 to-zinc-900 p-6 border-b border-zinc-800 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 rounded-xl bg-pink-500/10 border border-pink-500/30 flex items-center justify-center text-pink-400 text-xl shadow-lg">
+                <i class="fa-solid fa-venus"></i>
+              </div>
+              <div>
+                <h3 class="font-heading text-2xl font-bold text-white tracking-wide">
+                  BAYAN ÜYELERİMİZ İÇİN SEANSLAR
+                </h3>
+                <p class="text-xs text-pink-400/80 font-medium">Haftanın 6 Günü Kadınlara Özel Ayrılmış Seanslar</p>
+              </div>
+            </div>
+            <button class="lightbox-trigger text-xs text-zinc-400 hover:text-brandYellow flex items-center gap-1.5 p-2 rounded-lg bg-zinc-800/50 hover:bg-zinc-800 transition"
+                    data-full-src="assets/images/seans-kadin.jpg"
+                    data-caption="ARK Fitness Center - Bayan Üyelerimiz İçin Seanslar (Resmi Çizelge)">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <span class="hidden sm:inline">Orijinal Afiş</span>
+            </button>
+          </div>
+
+          <!-- Günler Tablosu (Kaynak Dosyadaki Saatler Birebir) -->
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div class="space-y-2.5">
+              
+              <!-- Pazartesi (Day 1) -->
+              <div data-day="1" class="schedule-row rounded-lg p-3.5 flex items-center justify-between bg-zinc-900/40">
+                <div class="flex items-center gap-2">
+                  <span class="font-heading font-semibold text-sm text-zinc-200">PAZARTESİ</span>
+                  <span class="today-badge hidden px-2 py-0.5 rounded text-[10px] font-bold bg-brandYellow text-black uppercase tracking-wider">Bugün</span>
+                </div>
+                <div class="text-right">
+                  <span class="font-mono text-sm font-bold text-brandYellow bg-brandYellow/10 px-3 py-1 rounded-md border border-brandYellow/20">
+                    10:00 - 13:00
+                  </span>
+                </div>
+              </div>
+
+              <!-- Salı (Day 2) - İKİ SEANS -->
+              <div data-day="2" class="schedule-row rounded-lg p-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-2 bg-zinc-900/40">
+                <div class="flex items-center gap-2">
+                  <span class="font-heading font-semibold text-sm text-zinc-200">SALI</span>
+                  <span class="today-badge hidden px-2 py-0.5 rounded text-[10px] font-bold bg-brandYellow text-black uppercase tracking-wider">Bugün</span>
+                  <span class="text-[10px] text-pink-400 uppercase font-medium bg-pink-950/60 px-2 py-0.5 rounded border border-pink-800/30">Gündüz & Akşam</span>
+                </div>
+                <div class="text-left sm:text-right">
+                  <span class="font-mono text-xs sm:text-sm font-bold text-white bg-zinc-800 px-2.5 py-1 rounded-md">
+                    10:00 - 13:00
+                  </span>
+                  <span class="text-zinc-500 mx-1">/</span>
+                  <span class="font-mono text-xs sm:text-sm font-bold text-pink-400 bg-pink-950/50 px-2.5 py-1 rounded-md border border-pink-700/30">
+                    18:00 - 21:00
+                  </span>
+                </div>
+              </div>
+
+              <!-- Çarşamba (Day 3) -->
+              <div data-day="3" class="schedule-row rounded-lg p-3.5 flex items-center justify-between bg-zinc-900/40">
+                <div class="flex items-center gap-2">
+                  <span class="font-heading font-semibold text-sm text-zinc-200">ÇARŞAMBA</span>
+                  <span class="today-badge hidden px-2 py-0.5 rounded text-[10px] font-bold bg-brandYellow text-black uppercase tracking-wider">Bugün</span>
+                </div>
+                <div class="text-right">
+                  <span class="font-mono text-sm font-bold text-brandYellow bg-brandYellow/10 px-3 py-1 rounded-md border border-brandYellow/20">
+                    10:00 - 13:00
+                  </span>
+                </div>
+              </div>
+
+              <!-- Perşembe (Day 4) - İKİ SEANS -->
+              <div data-day="4" class="schedule-row rounded-lg p-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-2 bg-zinc-900/40">
+                <div class="flex items-center gap-2">
+                  <span class="font-heading font-semibold text-sm text-zinc-200">PERŞEMBE</span>
+                  <span class="today-badge hidden px-2 py-0.5 rounded text-[10px] font-bold bg-brandYellow text-black uppercase tracking-wider">Bugün</span>
+                  <span class="text-[10px] text-pink-400 uppercase font-medium bg-pink-950/60 px-2 py-0.5 rounded border border-pink-800/30">Gündüz & Akşam</span>
+                </div>
+                <div class="text-left sm:text-right">
+                  <span class="font-mono text-xs sm:text-sm font-bold text-white bg-zinc-800 px-2.5 py-1 rounded-md">
+                    10:00 - 13:00
+                  </span>
+                  <span class="text-zinc-500 mx-1">/</span>
+                  <span class="font-mono text-xs sm:text-sm font-bold text-pink-400 bg-pink-950/50 px-2.5 py-1 rounded-md border border-pink-700/30">
+                    18:00 - 21:00
+                  </span>
+                </div>
+              </div>
+
+              <!-- Cuma (Day 5) -->
+              <div data-day="5" class="schedule-row rounded-lg p-3.5 flex items-center justify-between bg-zinc-900/40">
+                <div class="flex items-center gap-2">
+                  <span class="font-heading font-semibold text-sm text-zinc-200">CUMA</span>
+                  <span class="today-badge hidden px-2 py-0.5 rounded text-[10px] font-bold bg-brandYellow text-black uppercase tracking-wider">Bugün</span>
+                </div>
+                <div class="text-right">
+                  <span class="font-mono text-sm font-bold text-brandYellow bg-brandYellow/10 px-3 py-1 rounded-md border border-brandYellow/20">
+                    10:00 - 13:00
+                  </span>
+                </div>
+              </div>
+
+              <!-- Cumartesi (Day 6) - İKİ SEANS -->
+              <div data-day="6" class="schedule-row rounded-lg p-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-2 bg-zinc-900/40">
+                <div class="flex items-center gap-2">
+                  <span class="font-heading font-semibold text-sm text-zinc-200">CUMARTESİ</span>
+                  <span class="today-badge hidden px-2 py-0.5 rounded text-[10px] font-bold bg-brandYellow text-black uppercase tracking-wider">Bugün</span>
+                  <span class="text-[10px] text-pink-400 uppercase font-medium bg-pink-950/60 px-2 py-0.5 rounded border border-pink-800/30">Gündüz & Akşam</span>
+                </div>
+                <div class="text-left sm:text-right">
+                  <span class="font-mono text-xs sm:text-sm font-bold text-white bg-zinc-800 px-2.5 py-1 rounded-md">
+                    10:00 - 13:00
+                  </span>
+                  <span class="text-zinc-500 mx-1">/</span>
+                  <span class="font-mono text-xs sm:text-sm font-bold text-pink-400 bg-pink-950/50 px-2.5 py-1 rounded-md border border-pink-700/30">
+                    18:00 - 21:00
+                  </span>
+                </div>
+              </div>
+
+              <!-- Pazar (Day 0) -->
+              <div data-day="0" class="schedule-row rounded-lg p-3.5 flex items-center justify-between bg-zinc-950/60 border border-zinc-900">
+                <div class="flex items-center gap-2">
+                  <span class="font-heading font-semibold text-sm text-zinc-400">PAZAR</span>
+                  <span class="today-badge hidden px-2 py-0.5 rounded text-[10px] font-bold bg-red-500 text-white uppercase tracking-wider">Bugün</span>
+                </div>
+                <div class="text-right">
+                  <span class="font-heading text-xs font-bold text-red-400 uppercase tracking-wider bg-red-950/40 px-3 py-1 rounded-md border border-red-900/40">
+                    KAPALI
+                  </span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Alt Bilgi ve CTA -->
+            <div class="mt-6 pt-4 border-t border-zinc-800/80 flex items-center justify-between">
+              <span class="text-xs text-zinc-400">
+                <i class="fa-solid fa-circle-info text-pink-400 mr-1"></i> Pilates ve Zumba seansları dahildir.
+              </span>
+              <a href="https://wa.me/905426959502?text=Merhaba%2C%20bayan%20seanslar%C4%B1%20hakk%C4%B1nda%20detayl%C4%B1%20bilgi%20almak%20istiyorum." 
+                 target="_blank" 
+                 class="text-xs font-semibold text-pink-400 hover:text-pink-300 flex items-center gap-1 transition">
+                WhatsApp ile Danış <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+
+        <!-- =================== ERKEK SEANSLARI KARTI =================== -->
+        <div id="maleScheduleCard" class="ark-card rounded-2xl overflow-hidden border border-zinc-800 flex flex-col transition duration-300">
+          
+          <!-- Kart Başlığı -->
+          <div class="bg-gradient-to-r from-blue-950/40 via-zinc-900 to-zinc-900 p-6 border-b border-zinc-800 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400 text-xl shadow-lg">
+                <i class="fa-solid fa-mars"></i>
+              </div>
+              <div>
+                <h3 class="font-heading text-2xl font-bold text-white tracking-wide">
+                  ERKEK ÜYELERİMİZ İÇİN SEANSLAR
+                </h3>
+                <p class="text-xs text-blue-400/80 font-medium">Haftanın 6 Günü Gece 24:00'e Kadar Açık</p>
+              </div>
+            </div>
+            <button class="lightbox-trigger text-xs text-zinc-400 hover:text-brandYellow flex items-center gap-1.5 p-2 rounded-lg bg-zinc-800/50 hover:bg-zinc-800 transition"
+                    data-full-src="assets/images/seans-erkek.jpg"
+                    data-caption="ARK Fitness Center - Erkek Üyelerimiz İçin Seanslar (Resmi Çizelge)">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <span class="hidden sm:inline">Orijinal Afiş</span>
+            </button>
+          </div>
+
+          <!-- Günler Tablosu (Kaynak Dosyadaki Saatler Birebir) -->
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div class="space-y-2.5">
+              
+              <!-- Pazartesi (Day 1) - KESİNTİSİZ -->
+              <div data-day="1" class="schedule-row rounded-lg p-3.5 flex items-center justify-between bg-zinc-900/40">
+                <div class="flex items-center gap-2">
+                  <span class="font-heading font-semibold text-sm text-zinc-200">PAZARTESİ</span>
+                  <span class="today-badge hidden px-2 py-0.5 rounded text-[10px] font-bold bg-brandYellow text-black uppercase tracking-wider">Bugün</span>
+                  <span class="text-[10px] text-blue-400 uppercase font-medium bg-blue-950/60 px-2 py-0.5 rounded border border-blue-800/30">Kesintisiz</span>
+                </div>
+                <div class="text-right">
+                  <span class="font-mono text-sm font-bold text-brandYellow bg-brandYellow/10 px-3 py-1 rounded-md border border-brandYellow/20">
+                    13:30 - 24:00
+                  </span>
+                </div>
+              </div>
+
+              <!-- Salı (Day 2) - İKİ SEANS -->
+              <div data-day="2" class="schedule-row rounded-lg p-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-2 bg-zinc-900/40">
+                <div class="flex items-center gap-2">
+                  <span class="font-heading font-semibold text-sm text-zinc-200">SALI</span>
+                  <span class="today-badge hidden px-2 py-0.5 rounded text-[10px] font-bold bg-brandYellow text-black uppercase tracking-wider">Bugün</span>
+                </div>
+                <div class="text-left sm:text-right">
+                  <span class="font-mono text-xs sm:text-sm font-bold text-white bg-zinc-800 px-2.5 py-1 rounded-md">
+                    13:30 - 17:30
+                  </span>
+                  <span class="text-zinc-500 mx-1">/</span>
+                  <span class="font-mono text-xs sm:text-sm font-bold text-blue-400 bg-blue-950/50 px-2.5 py-1 rounded-md border border-blue-700/30">
+                    21:30 - 24:00
+                  </span>
+                </div>
+              </div>
+
+              <!-- Çarşamba (Day 3) - KESİNTİSİZ -->
+              <div data-day="3" class="schedule-row rounded-lg p-3.5 flex items-center justify-between bg-zinc-900/40">
+                <div class="flex items-center gap-2">
+                  <span class="font-heading font-semibold text-sm text-zinc-200">ÇARŞAMBA</span>
+                  <span class="today-badge hidden px-2 py-0.5 rounded text-[10px] font-bold bg-brandYellow text-black uppercase tracking-wider">Bugün</span>
+                  <span class="text-[10px] text-blue-400 uppercase font-medium bg-blue-950/60 px-2 py-0.5 rounded border border-blue-800/30">Kesintisiz</span>
+                </div>
+                <div class="text-right">
+                  <span class="font-mono text-sm font-bold text-brandYellow bg-brandYellow/10 px-3 py-1 rounded-md border border-brandYellow/20">
+                    13:30 - 24:00
+                  </span>
+                </div>
+              </div>
+
+              <!-- Perşembe (Day 4) - İKİ SEANS -->
+              <div data-day="4" class="schedule-row rounded-lg p-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-2 bg-zinc-900/40">
+                <div class="flex items-center gap-2">
+                  <span class="font-heading font-semibold text-sm text-zinc-200">PERŞEMBE</span>
+                  <span class="today-badge hidden px-2 py-0.5 rounded text-[10px] font-bold bg-brandYellow text-black uppercase tracking-wider">Bugün</span>
+                </div>
+                <div class="text-left sm:text-right">
+                  <span class="font-mono text-xs sm:text-sm font-bold text-white bg-zinc-800 px-2.5 py-1 rounded-md">
+                    13:30 - 17:30
+                  </span>
+                  <span class="text-zinc-500 mx-1">/</span>
+                  <span class="font-mono text-xs sm:text-sm font-bold text-blue-400 bg-blue-950/50 px-2.5 py-1 rounded-md border border-blue-700/30">
+                    21:30 - 24:00
+                  </span>
+                </div>
+              </div>
+
+              <!-- Cuma (Day 5) - KESİNTİSİZ -->
+              <div data-day="5" class="schedule-row rounded-lg p-3.5 flex items-center justify-between bg-zinc-900/40">
+                <div class="flex items-center gap-2">
+                  <span class="font-heading font-semibold text-sm text-zinc-200">CUMA</span>
+                  <span class="today-badge hidden px-2 py-0.5 rounded text-[10px] font-bold bg-brandYellow text-black uppercase tracking-wider">Bugün</span>
+                  <span class="text-[10px] text-blue-400 uppercase font-medium bg-blue-950/60 px-2 py-0.5 rounded border border-blue-800/30">Kesintisiz</span>
+                </div>
+                <div class="text-right">
+                  <span class="font-mono text-sm font-bold text-brandYellow bg-brandYellow/10 px-3 py-1 rounded-md border border-brandYellow/20">
+                    13:30 - 24:00
+                  </span>
+                </div>
+              </div>
+
+              <!-- Cumartesi (Day 6) - İKİ SEANS -->
+              <div data-day="6" class="schedule-row rounded-lg p-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-2 bg-zinc-900/40">
+                <div class="flex items-center gap-2">
+                  <span class="font-heading font-semibold text-sm text-zinc-200">CUMARTESİ</span>
+                  <span class="today-badge hidden px-2 py-0.5 rounded text-[10px] font-bold bg-brandYellow text-black uppercase tracking-wider">Bugün</span>
+                </div>
+                <div class="text-left sm:text-right">
+                  <span class="font-mono text-xs sm:text-sm font-bold text-white bg-zinc-800 px-2.5 py-1 rounded-md">
+                    13:30 - 17:30
+                  </span>
+                  <span class="text-zinc-500 mx-1">/</span>
+                  <span class="font-mono text-xs sm:text-sm font-bold text-blue-400 bg-blue-950/50 px-2.5 py-1 rounded-md border border-blue-700/30">
+                    21:30 - 24:00
+                  </span>
+                </div>
+              </div>
+
+              <!-- Pazar (Day 0) -->
+              <div data-day="0" class="schedule-row rounded-lg p-3.5 flex items-center justify-between bg-zinc-950/60 border border-zinc-900">
+                <div class="flex items-center gap-2">
+                  <span class="font-heading font-semibold text-sm text-zinc-400">PAZAR</span>
+                  <span class="today-badge hidden px-2 py-0.5 rounded text-[10px] font-bold bg-red-500 text-white uppercase tracking-wider">Bugün</span>
+                </div>
+                <div class="text-right">
+                  <span class="font-heading text-xs font-bold text-red-400 uppercase tracking-wider bg-red-950/40 px-3 py-1 rounded-md border border-red-900/40">
+                    KAPALI
+                  </span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Alt Bilgi ve CTA -->
+            <div class="mt-6 pt-4 border-t border-zinc-800/80 flex items-center justify-between">
+              <span class="text-xs text-zinc-400">
+                <i class="fa-solid fa-circle-info text-blue-400 mr-1"></i> Ağırlık ve kardiyo alanı tam kapasite açıktır.
+              </span>
+              <a href="https://wa.me/905426959502?text=Merhaba%2C%20erkek%20seanslar%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." 
+                 target="_blank" 
+                 class="text-xs font-semibold text-blue-400 hover:text-blue-300 flex items-center gap-1 transition">
+                WhatsApp ile Danış <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       HAKKIMIZDA & KURUCU (BİZ KİMİZ? - KAYNAK DOSYADAKİ BİLGİLERLE BİREBİR)
+       ========================================================================== -->
+  <section id="hakkimizda" class="py-24 bg-brandBlack relative overflow-hidden">
+    <!-- Dekoratif Işıklar -->
+    <div class="absolute -top-32 -left-32 w-80 h-80 bg-brandYellow/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Sol: Kurumsal Bilgi ve Kurucu -->
+        <div class="lg:col-span-7">
+          <span class="text-xs font-bold tracking-[0.25em] text-brandYellow uppercase">
+            BİZ KİMİZ?
+          </span>
+          <h2 class="font-heading text-3xl sm:text-5xl font-extrabold uppercase mt-2 mb-6 text-white leading-tight">
+            ŞEHRİN TEK PROFESYONEL TESİSİ:<br>
+            <span class="text-brandYellow">ARK FITNESS CENTER</span>
+          </h2>
+          
+          <!-- Kaynak Dosyadan Birebir Alınan Tanıtım Metni -->
+          <div class="space-y-4 text-zinc-300 text-base leading-relaxed mb-8">
+            <p class="border-l-2 border-brandYellow pl-4 text-zinc-200 font-medium">
+              "2014 yılında kurulmuş ve faaliyete başlamıştır. Fitness, vücut geliştirme, kilo alma, kilo verme, pilates, zumba seansları mevcuttur. Uzman antrenörlerle birebir çalışma fırsatıyla şehrin tek profesyonel tesisidir."
+            </p>
+          </div>
+
+          <!-- Kurucu Özel Profili (Kaynak Dosyadan Birebir) -->
+          <div class="ark-card rounded-2xl p-6 border-l-4 border-l-brandYellow mb-8">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+              <div class="w-16 h-16 rounded-2xl bg-brandYellow/10 border border-brandYellow/30 flex items-center justify-center text-brandYellow text-3xl flex-shrink-0">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <div>
+                <div class="text-xs uppercase font-bold tracking-wider text-brandYellow mb-1">
+                  Firmanın Kurucusu & Kıdemli Baş Antrenör
+                </div>
+                <h3 class="font-heading text-2xl font-bold text-white">
+                  Ramazan KARAÇELİK
+                </h3>
+                <p class="text-sm text-zinc-300 mt-1 leading-normal">
+                  Selçuk Üniversitesi Beden Eğitimi Akademisi mezunu ve yüksek lisans mezunudur. Fitness, vücut geliştirme uzmanlığı <strong class="text-brandYellow">3. Kademe kıdemli antrenör</strong> belgesine sahiptir.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tesis Özellikleri / Rozetler -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+            <div class="p-4 rounded-xl bg-zinc-900/60 border border-zinc-800">
+              <i class="fa-solid fa-dumbbell text-brandYellow text-xl mb-2"></i>
+              <div class="font-heading font-bold text-white text-base">Gelişmiş Ekipman</div>
+              <div class="text-xs text-zinc-400 mt-0.5">Serbest ağırlık & makineler</div>
+            </div>
+            <div class="p-4 rounded-xl bg-zinc-900/60 border border-zinc-800">
+              <i class="fa-solid fa-user-shield text-brandYellow text-xl mb-2"></i>
+              <div class="font-heading font-bold text-white text-base">Akademik Rehberlik</div>
+              <div class="text-xs text-zinc-400 mt-0.5">Beden eğitimi yüksek lisanslı</div>
+            </div>
+            <div class="p-4 rounded-xl bg-zinc-900/60 border border-zinc-800 col-span-2 sm:col-span-1">
+              <i class="fa-solid fa-shower text-brandYellow text-xl mb-2"></i>
+              <div class="font-heading font-bold text-white text-base">Hijyen & Konfor</div>
+              <div class="text-xs text-zinc-400 mt-0.5">Soyunma odaları ve duşlar</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Sağ: Orijinal Paylaşım Görseli & Logo Vitrini -->
+        <div class="lg:col-span-5">
+          <div class="relative group">
+            
+            <div class="relative rounded-2xl overflow-hidden border-2 border-brandYellow/30 shadow-[0_0_40px_rgba(255,212,0,0.15)] bg-zinc-900">
+              <img src="assets/images/hakkimizda-biz-kimiz.jpg" 
+                   alt="ARK Fitness Center Biz Kimiz? Kurumsal Paylaşım" 
+                   class="w-full h-auto object-cover transition duration-500 group-hover:scale-[1.02]">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-6">
+                <div>
+                  <span class="inline-block px-3 py-1 rounded bg-brandYellow text-black font-heading font-bold text-xs uppercase tracking-wider mb-2">
+                    Resmi Kurumsal Duyuru
+                  </span>
+                  <p class="text-sm text-zinc-200">
+                    2014 yılından bu yana Beyşehir’de spora ve sağlıklı yaşama öncülük ediyoruz.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Büyüt Butonu -->
+            <button class="lightbox-trigger absolute top-4 right-4 bg-black/70 hover:bg-black text-brandYellow p-3 rounded-full border border-brandBorder backdrop-blur-md transition shadow-lg"
+                    data-full-src="assets/images/hakkimizda-biz-kimiz.jpg"
+                    data-caption="ARK Fitness Center - Biz Kimiz? Resmi Kurumsal Paylaşım">
+              <i class="fa-solid fa-expand"></i>
+            </button>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       HİZMETLERİMİZ & BRANŞLAR (KAYNAK DOSYALARDAKİ DALLARLA TAM UYUMLU)
+       ========================================================================== -->
+  <section id="hizmetler" class="py-24 bg-zinc-950 border-t border-zinc-900 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold tracking-[0.25em] text-brandYellow uppercase">
+          HEDEFLERİNE UYGUN BRANŞLAR
+        </span>
+        <h2 class="font-heading text-3xl sm:text-5xl font-extrabold uppercase mt-2 mb-4 text-white">
+          UZMANLIK ALANLARIMIZ VE <span class="text-brandYellow">SEANSLAR</span>
+        </h2>
+        <div class="w-16 h-1 bg-brandYellow mx-auto mb-6"></div>
+        <p class="text-zinc-400 text-sm sm:text-base">
+          ARK Fitness Center bünyesinde yer alan branşlar, Selçuk Üniversitesi Beden Eğitimi Akademisi mezunu 3. Kademe Kıdemli Antrenör güvencesiyle sunulmaktadır.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Hizmet 1: Vücut Geliştirme (Dosyadan alıntı) -->
+        <div class="ark-card rounded-2xl p-7 border border-zinc-800 flex flex-col justify-between group">
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-brandYellow/10 border border-brandYellow/30 flex items-center justify-center text-brandYellow text-2xl mb-6 group-hover:scale-110 transition">
+              <i class="fa-solid fa-dumbbell"></i>
+            </div>
+            <h3 class="font-heading text-2xl font-bold text-white mb-3">VÜCUT GELİŞTİRME</h3>
+            <p class="text-zinc-400 text-sm leading-relaxed mb-4">
+              <span class="text-zinc-300 font-medium italic">"Bodybuilding yani vücut geliştirmek; ağırlık kaldırma, kalori alımı ve diğer unsurları bir araya getirerek kasların geliştirilmesi demektir."</span>
+            </p>
+            <ul class="space-y-2 text-xs text-zinc-400">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandYellow"></i> Hipertrofi ve kas kütlesi artışı</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandYellow"></i> Güç, dayanıklılık ve definisyon programları</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandYellow"></i> Doğru form ve sakatlık önleyici teknikler</li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-4 border-t border-zinc-800/80">
+            <button class="lightbox-trigger text-xs font-semibold text-brandYellow hover:underline flex items-center gap-1"
+                    data-full-src="assets/images/vucut-gelistirme.jpg"
+                    data-caption="ARK Fitness Center - Vücut Geliştirme Rehberi">
+              <i class="fa-solid fa-image"></i> Rehber Görselini İncele
+            </button>
+          </div>
+        </div>
+
+        <!-- Hizmet 2: Kilo Alma & Kilo Verme (Dosyadan alıntı) -->
+        <div class="ark-card rounded-2xl p-7 border border-zinc-800 flex flex-col justify-between group">
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-brandYellow/10 border border-brandYellow/30 flex items-center justify-center text-brandYellow text-2xl mb-6 group-hover:scale-110 transition">
+              <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+            <h3 class="font-heading text-2xl font-bold text-white mb-3">KİLO ALMA & KİLO VERME</h3>
+            <p class="text-zinc-400 text-sm leading-relaxed mb-4">
+              Bölgesel yağlanmayı ve sarkmaları engellemek adına düzenli egzersiz ve doğru enerji dengesiyle hedefinize yönelik bilimsel kilo yönetimi.
+            </p>
+            <ul class="space-y-2 text-xs text-zinc-400">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandYellow"></i> Kalori dengesi ve beslenme danışmanlığı</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandYellow"></i> Sağlıklı kas kazanımı ve kilo artışı</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandYellow"></i> Yağ yakımı ve metabolizma hızlandırıcı kardiyo</li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-4 border-t border-zinc-800/80">
+            <button class="lightbox-trigger text-xs font-semibold text-brandYellow hover:underline flex items-center gap-1"
+                    data-full-src="assets/images/kilo-alma-verme.jpg"
+                    data-caption="ARK Fitness Center - Kilo Alma ve Kilo Verme Rehberi">
+              <i class="fa-solid fa-image"></i> Rehber Görselini İncele
+            </button>
+          </div>
+        </div>
+
+        <!-- Hizmet 3: Personal Training (Birebir Antrenörlük) -->
+        <div class="ark-card ark-card-featured rounded-2xl p-7 border border-brandYellow/50 flex flex-col justify-between group relative">
+          <div class="absolute -top-3 right-6 bg-brandYellow text-black font-heading font-bold text-[11px] px-3 py-1 rounded-full uppercase tracking-wider">
+            Özel Birebir
+          </div>
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-brandYellow text-black flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition shadow-lg">
+              <i class="fa-solid fa-user-ninja"></i>
+            </div>
+            <h3 class="font-heading text-2xl font-bold text-white mb-3">PERSONAL TRAINING</h3>
+            <p class="text-zinc-300 text-sm leading-relaxed mb-4">
+              Uzman antrenörlerle birebir çalışma fırsatıyla kişiye özel antrenman, anatomik gelişim ve motivasyon takibi.
+            </p>
+            <ul class="space-y-2 text-xs text-zinc-300">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandYellow"></i> 3. Kademe Kıdemli Antrenör eşliğinde çalışma</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandYellow"></i> Bireysel hedeflere %100 özel program</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandYellow"></i> Maksimum motivasyon, hızlı ve kalıcı sonuç</li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-4 border-t border-zinc-800/80">
+            <a href="https://wa.me/905426959502?text=Merhaba%20ARK%20Fitness%2C%20Personal%20Training%20(birebir%20%C3%B6zel%20ders)%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." 
+               target="_blank" 
+               class="text-xs font-semibold text-brandYellow hover:underline flex items-center gap-1">
+              PT Programı İçin Bilgi Al <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hizmet 4: Pilates (Kadın Seansları) -->
+        <div class="ark-card rounded-2xl p-7 border border-zinc-800 flex flex-col justify-between group">
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-pink-500/10 border border-pink-500/30 flex items-center justify-center text-pink-400 text-2xl mb-6 group-hover:scale-110 transition">
+              <i class="fa-solid fa-person-walking"></i>
+            </div>
+            <h3 class="font-heading text-2xl font-bold text-white mb-3">PİLATES</h3>
+            <p class="text-zinc-400 text-sm leading-relaxed mb-4">
+              Bayan seanslarımızda omurga sağlığı, core kuvveti, esneklik ve postür düzeltme odaklı çalışmalar.
+            </p>
+            <ul class="space-y-2 text-xs text-zinc-400">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pink-400"></i> Core bölgesi güçlendirme</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pink-400"></i> Duruş bozukluklarını giderme & esneklik</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pink-400"></i> Kadın seanslarında uzman eşliğinde</li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-4 border-t border-zinc-800/80">
+            <a href="#seanslar" class="text-xs font-semibold text-pink-400 hover:underline flex items-center gap-1">
+              Kadın Seans Saatlerini İncele <i class="fa-solid fa-chevron-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hizmet 5: Zumba (Kadın Seansları) -->
+        <div class="ark-card rounded-2xl p-7 border border-zinc-800 flex flex-col justify-between group">
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 transition">
+              <i class="fa-solid fa-music"></i>
+            </div>
+            <h3 class="font-heading text-2xl font-bold text-white mb-3">ZUMBA</h3>
+            <p class="text-zinc-400 text-sm leading-relaxed mb-4">
+              Yüksek enerjili müzikler eşliğinde eğlenirken kalori yaktıran, kardiyovasküler kapasiteyi artıran grup seansları.
+            </p>
+            <ul class="space-y-2 text-xs text-zinc-400">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> Yüksek kalori yakımı ve yağ eritme</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> Ritim, kondisyon ve moral depolama</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> Dinamik ve motive edici grup atmosferi</li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-4 border-t border-zinc-800/80">
+            <a href="https://wa.me/905426959502?text=Merhaba%2C%20zumba%20seanslar%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." 
+               target="_blank" 
+               class="text-xs font-semibold text-purple-400 hover:underline flex items-center gap-1">
+              Zumba İçin Bilgi Al <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hizmet 6: Kardiyo & Kondisyon -->
+        <div class="ark-card rounded-2xl p-7 border border-zinc-800 flex flex-col justify-between group">
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-brandYellow/10 border border-brandYellow/30 flex items-center justify-center text-brandYellow text-2xl mb-6 group-hover:scale-110 transition">
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <h3 class="font-heading text-2xl font-bold text-white mb-3">KARDİYO & KONDİSYON</h3>
+            <p class="text-zinc-400 text-sm leading-relaxed mb-4">
+              Koşu bantları, eliptik bisikletler ve dikey bisikletlerle kalp sağlığı, ciğer kapasitesi ve genel kondisyon artışı.
+            </p>
+            <ul class="space-y-2 text-xs text-zinc-400">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandYellow"></i> Kalp ve damar sağlığını destekleme</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandYellow"></i> Egzersiz öncesi ısınma & soğuma</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandYellow"></i> Gün boyu zinde ve enerjik hissetme</li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-4 border-t border-zinc-800/80">
+            <a href="#uyelik" class="text-xs font-semibold text-brandYellow hover:underline flex items-center gap-1">
+              Üyelik Paketlerine Bak <i class="fa-solid fa-chevron-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SALON KURALLARIMIZ (KAYNAK DOSYADAKİ 3 KURAL BİREBİR)
+       ========================================================================== -->
+  <section id="kurallar" class="py-24 bg-brandBlack relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Sol: Orijinal Kural Afişi -->
+        <div class="lg:col-span-5 order-2 lg:order-1">
+          <div class="relative group">
+            <div class="rounded-2xl overflow-hidden border-2 border-brandYellow shadow-[0_0_30px_rgba(255,212,0,0.2)] bg-brandYellow">
+              <img src="assets/images/salon-kurallari.jpg" 
+                   alt="ARK Fitness Center Salon Kurallarımız Resmi Afiş" 
+                   class="w-full h-auto object-cover">
+            </div>
+            <button class="lightbox-trigger absolute top-4 right-4 bg-black/80 hover:bg-black text-brandYellow p-3 rounded-full border border-brandBorder backdrop-blur-md transition shadow-lg"
+                    data-full-src="assets/images/salon-kurallari.jpg"
+                    data-caption="ARK Fitness Center - Salon Kurallarımız (Resmi Afiş)">
+              <i class="fa-solid fa-expand"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Sağ: Kuralların Açıklaması ve Standartlar -->
+        <div class="lg:col-span-7 order-1 lg:order-2">
+          <span class="text-xs font-bold tracking-[0.25em] text-brandYellow uppercase">
+            SAYGI, HİJYEN VE DİSİPLİN
+          </span>
+          <h2 class="font-heading text-3xl sm:text-5xl font-extrabold uppercase mt-2 mb-6 text-white leading-tight">
+            ARK FITNESS CENTER<br>
+            <span class="text-brandYellow">SALON KURALLARIMIZ</span>
+          </h2>
+          <p class="text-zinc-400 text-base leading-relaxed mb-8">
+            Tüm üyelerimizin güvenli, temiz, huzurlu ve verimli bir ortamda spor yapabilmesi için salonumuzda geçerli temel kurallarımızdır:
+          </p>
+
+          <!-- 3 Altın Kural Listesi -->
+          <div class="space-y-5">
+            
+            <!-- Kural 1 -->
+            <div class="ark-card rounded-2xl p-5 border border-zinc-800 flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-brandYellow text-black font-heading font-black text-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                1
+              </div>
+              <div>
+                <h3 class="font-heading text-xl font-bold text-white uppercase tracking-wide">
+                  AĞIRLIKLARI YERLERİNE BIRAKINIZ.
+                </h3>
+                <p class="text-sm text-zinc-400 mt-1">
+                  Kullanılan dambıl, plaka ve barları antrenman bittikten sonra kendi askı ve stantlarına bırakmak diğer sporculara saygının ve salon güvenliğinin ilk şartıdır.
+                </p>
+              </div>
+            </div>
+
+            <!-- Kural 2 -->
+            <div class="ark-card rounded-2xl p-5 border border-zinc-800 flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-brandYellow text-black font-heading font-black text-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                2
+              </div>
+              <div>
+                <h3 class="font-heading text-xl font-bold text-white uppercase tracking-wide">
+                  HAVLU KULLANINIZ.
+                </h3>
+                <p class="text-sm text-zinc-400 mt-1">
+                  Makinelerde ve sehpalarda hijyen sağlamak amacıyla her üyemizin antrenman esnasında kişisel spor havlusu kullanması zorunludur.
+                </p>
+              </div>
+            </div>
+
+            <!-- Kural 3 -->
+            <div class="ark-card rounded-2xl p-5 border border-zinc-800 flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-brandYellow text-black font-heading font-black text-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                3
+              </div>
+              <div>
+                <h3 class="font-heading text-xl font-bold text-white uppercase tracking-wide">
+                  TEMİZ AYAKKABI İLE SPOR YAPINIZ.
+                </h3>
+                <p class="text-sm text-zinc-400 mt-1">
+                  Dışarıda giyilen ayakkabılarla spor alanına girilmez. Yalnızca salon içinde giyilmek üzere getirilmiş temiz tabanlı spor ayakkabısı kullanılmalıdır.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       İNTERAKTİF HESAPLAYICI (BMI & GÜNLÜK KALORİ İHTİYACI)
+       ========================================================================== -->
+  <section id="hesaplayici" class="py-24 bg-zinc-950 border-t border-zinc-900 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-bold tracking-[0.25em] text-brandYellow uppercase">
+          FORMUNU DEĞERLENDİR
+        </span>
+        <h2 class="font-heading text-3xl sm:text-5xl font-extrabold uppercase mt-2 mb-4 text-white">
+          VÜCUT KİTLE İNDEKSİ (BMI) & <span class="text-brandYellow">KALORİ ARACI</span>
+        </h2>
+        <div class="w-16 h-1 bg-brandYellow mx-auto mb-6"></div>
+        <p class="text-zinc-400 text-sm sm:text-base">
+          Boy, kilo ve yaş bilgilerinizi girerek ideal kilo aralığınızı ve günlük yaklaşık kalori ihtiyacınızı saniyeler içinde hesaplayın.
+        </p>
+      </div>
+
+      <div class="max-w-4xl mx-auto ark-card rounded-2xl p-6 sm:p-10 border border-zinc-800 shadow-2xl">
+        <form id="bmiForm" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
+          
+          <!-- Cinsiyet -->
+          <div class="sm:col-span-2 md:col-span-1">
+            <label class="block text-xs uppercase font-bold text-zinc-300 tracking-wider mb-2">Cinsiyet</label>
+            <select name="gender" class="w-full bg-zinc-900 border border-zinc-700 rounded-lg px-3.5 py-3 text-sm text-white focus:outline-none focus:border-brandYellow">
+              <option value="male">Erkek</option>
+              <option value="female">Kadın</option>
+            </select>
+          </div>
+
+          <!-- Yaş -->
+          <div class="sm:col-span-2 md:col-span-1">
+            <label class="block text-xs uppercase font-bold text-zinc-300 tracking-wider mb-2">Yaş</label>
+            <input type="number" name="age" min="12" max="90" value="25" required class="w-full bg-zinc-900 border border-zinc-700 rounded-lg px-3.5 py-3 text-sm text-white focus:outline-none focus:border-brandYellow">
+          </div>
+
+          <!-- Boy -->
+          <div class="sm:col-span-2 md:col-span-1">
+            <label class="block text-xs uppercase font-bold text-zinc-300 tracking-wider mb-2">Boy (cm)</label>
+            <input type="number" name="height" min="100" max="230" placeholder="Örn: 178" value="175" required class="w-full bg-zinc-900 border border-zinc-700 rounded-lg px-3.5 py-3 text-sm text-white focus:outline-none focus:border-brandYellow">
+          </div>
+
+          <!-- Kilo -->
+          <div class="sm:col-span-2 md:col-span-1">
+            <label class="block text-xs uppercase font-bold text-zinc-300 tracking-wider mb-2">Kilo (kg)</label>
+            <input type="number" name="weight" min="30" max="250" step="0.5" placeholder="Örn: 75" value="75" required class="w-full bg-zinc-900 border border-zinc-700 rounded-lg px-3.5 py-3 text-sm text-white focus:outline-none focus:border-brandYellow">
+          </div>
+
+          <!-- Aktivite Seviyesi -->
+          <div class="sm:col-span-2 md:col-span-3">
+            <label class="block text-xs uppercase font-bold text-zinc-300 tracking-wider mb-2">Haftalık Aktivite Seviyesi</label>
+            <select name="activity" class="w-full bg-zinc-900 border border-zinc-700 rounded-lg px-3.5 py-3 text-sm text-white focus:outline-none focus:border-brandYellow">
+              <option value="1.2">Masa Başı / Hareketsiz Yaşam</option>
+              <option value="1.375" selected>Hafif Egzersiz (Haftada 1-3 gün spor)</option>
+              <option value="1.55">Orta Düzey Egzersiz (Haftada 3-5 gün spor)</option>
+              <option value="1.725">Ağır Antrenman (Haftada 6-7 gün spor)</option>
+            </select>
+          </div>
+
+          <!-- Hesapla Butonu -->
+          <div class="sm:col-span-2 md:col-span-1 flex items-end">
+            <button type="submit" class="btn-gold w-full py-3 rounded-lg text-sm shadow-md">
+              <i class="fa-solid fa-calculator"></i>
+              <span>Hesapla</span>
+            </button>
+          </div>
+
+        </form>
+
+        <!-- Sonuç Kartı (Başlangıçta gizli veya hazır) -->
+        <div id="bmiResultCard" class="hidden mt-8 pt-8 border-t border-zinc-800 bg-zinc-900/60 rounded-xl p-6">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+            
+            <div class="text-center md:text-left">
+              <div class="text-xs uppercase font-bold text-zinc-400 tracking-wider mb-1">Vücut Kitle İndeksiniz</div>
+              <div id="bmiValue" class="font-heading text-4xl sm:text-5xl font-black text-brandYellow">--</div>
+              <div id="bmiCategory" class="text-sm font-bold text-green-400 mt-1">Normal</div>
+            </div>
+
+            <div>
+              <div class="text-xs uppercase font-bold text-zinc-400 tracking-wider mb-1">Antrenör Yorumu & Öneri</div>
+              <p id="bmiDesc" class="text-sm text-zinc-300 leading-relaxed">
+                Hesaplama sonucunuz değerlendirildi.
+              </p>
+              <div id="bmrValue" class="text-xs font-mono text-brandYellow mt-2">
+                --
+              </div>
+            </div>
+
+            <div class="text-center md:text-right">
+              <a id="bmiWaBtn" href="#" target="_blank" class="btn-whatsapp px-5 py-3 rounded-xl text-xs sm:text-sm inline-flex items-center gap-2">
+                <i class="fa-brands fa-whatsapp text-base"></i>
+                <span>Bu Hedefle Bize Ulaşın</span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ÜYELİK PAKETLERİ
+       (Kurala Uygun: Kaynakta fiyat listesi olmadığı için uydurulmadı, şeffaf bilgi butonu eklendi)
+       ========================================================================== -->
+  <section id="uyelik" class="py-24 bg-brandBlack border-t border-zinc-900 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold tracking-[0.25em] text-brandYellow uppercase">
+          SANA UYGUN ÜYELİK SEÇENEĞİ
+        </span>
+        <h2 class="font-heading text-3xl sm:text-5xl font-extrabold uppercase mt-2 mb-4 text-white">
+          ARK FITNESS <span class="text-brandYellow">ÜYELİK PAKETLERİ</span>
+        </h2>
+        <div class="w-16 h-1 bg-brandYellow mx-auto mb-6"></div>
+        <p class="text-zinc-400 text-sm sm:text-base leading-relaxed">
+          Beyşehir’de hedeflerinize uygun üyelik dönemini seçin. Güncel üyelik kampanyaları, öğrenci avantajları ve kayıt detayları için doğrudan WhatsApp üzerinden anında bilgi alabilirsiniz.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Paket 1: 1 Aylık -->
+        <div class="ark-card rounded-2xl p-6 border border-zinc-800 flex flex-col justify-between">
+          <div>
+            <div class="text-xs font-bold uppercase tracking-wider text-zinc-400 mb-2">Başlangıç Paketi</div>
+            <h3 class="font-heading text-2xl font-bold text-white mb-4">1 AYLIK ÜYELİK</h3>
+            <p class="text-xs text-zinc-400 mb-6 leading-relaxed">
+              Salonu deneyimlemek ve spora düzenli bir başlangıç yapmak isteyenler için ideal seçenek.
+            </p>
+            <ul class="space-y-3 text-xs text-zinc-300 mb-8">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandYellow"></i> İlgili seans saatlerinde tam erişim</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandYellow"></i> Ağırlık ve serbest antrenman alanı</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandYellow"></i> Kardiyo cihazları kullanımı</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandYellow"></i> Soyunma odası & duş imkânı</li>
+            </ul>
+          </div>
+          <div>
+            <a href="https://wa.me/905426959502?text=Merhaba%2C%201%20Ayl%C4%B1k%20%C3%BCyelik%20fiyat%C4%B1%20ve%20kay%C4%B1t%20bilgisi%20almak%20istiyorum." 
+               target="_blank" 
+               class="btn-dark w-full py-3 rounded-lg text-xs">
+              <i class="fa-brands fa-whatsapp text-sm text-brandYellow"></i>
+              <span>Fiyat Bilgisi Al</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Paket 2: 3 Aylık (Öne Çıkan) -->
+        <div class="ark-card ark-card-featured rounded-2xl p-6 border-2 border-brandYellow flex flex-col justify-between relative shadow-2xl">
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-brandYellow text-black font-heading font-black text-[11px] px-3.5 py-1 rounded-full uppercase tracking-wider shadow-lg">
+            EN ÇOK TERCİH EDİLEN
+          </div>
+          <div>
+            <div class="text-xs font-bold uppercase tracking-wider text-brandYellow mb-2 mt-2">Avantaj Paketi</div>
+            <h3 class="font-heading text-2xl font-bold text-white mb-4">3 AYLIK ÜYELİK</h3>
+            <p class="text-xs text-zinc-300 mb-6 leading-relaxed">
+              Gözle görülür vücut gelişimi, kilo kontrolü ve alışkanlık kazanmak için tavsiye edilen dönem.
+            </p>
+            <ul class="space-y-3 text-xs text-zinc-200 mb-8">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandYellow"></i> İlgili seanslara sınırsız giriş</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandYellow"></i> İlk ölçüm & seviye belirleme desteği</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandYellow"></i> Kadın seanslarında Pilates & Zumba</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandYellow"></i> Soyunma dolabı & duş erişimi</li>
+            </ul>
+          </div>
+          <div>
+            <a href="https://wa.me/905426959502?text=Merhaba%2C%203%20Ayl%C4%B1k%20avantaj%20paketi%20fiyat%C4%B1%20ve%20kampanyas%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." 
+               target="_blank" 
+               class="btn-gold w-full py-3 rounded-lg text-xs shadow-lg">
+              <i class="fa-brands fa-whatsapp text-sm"></i>
+              <span>Fiyat & Kayıt Sor</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Paket 3: 6 Aylık & Yıllık -->
+        <div class="ark-card rounded-2xl p-6 border border-zinc-800 flex flex-col justify-between">
+          <div>
+            <div class="text-xs font-bold uppercase tracking-wider text-zinc-400 mb-2">Uzun Vadeli Hedef</div>
+            <h3 class="font-heading text-2xl font-bold text-white mb-4">6 AY / 1 YILLIK</h3>
+            <p class="text-xs text-zinc-400 mb-6 leading-relaxed">
+              Sporu bir yaşam tarzı haline getiren ve en yüksek fiyat avantajından faydalanmak isteyenler için.
+            </p>
+            <ul class="space-y-3 text-xs text-zinc-300 mb-8">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandYellow"></i> En avantajlı birim ay fiyatı</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandYellow"></i> Kesintisiz yıllık form takibi</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandYellow"></i> Tüm salon ekipmanlarına sınırsız erişim</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandYellow"></i> Süre dondurma imkânı (şartlara bağlı)</li>
+            </ul>
+          </div>
+          <div>
+            <a href="https://wa.me/905426959502?text=Merhaba%2C%206%20Ay%20veya%201%20Y%C4%B1ll%C4%B1k%20%C3%BCyelik%20kampanyalar%C4%B1n%C4%B1z%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." 
+               target="_blank" 
+               class="btn-dark w-full py-3 rounded-lg text-xs">
+              <i class="fa-brands fa-whatsapp text-sm text-brandYellow"></i>
+              <span>Fiyat Bilgisi Al</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Paket 4: Personal Training Özel -->
+        <div class="ark-card rounded-2xl p-6 border border-zinc-800 flex flex-col justify-between">
+          <div>
+            <div class="text-xs font-bold uppercase tracking-wider text-brandYellow mb-2">Birebir Koçluk</div>
+            <h3 class="font-heading text-2xl font-bold text-white mb-4">PERSONAL TRAINING</h3>
+            <p class="text-xs text-zinc-400 mb-6 leading-relaxed">
+              Selçuk Üniversitesi mezunu 3. Kademe Kıdemli Antrenör ile birebir hedefe kilitlenme paketi.
+            </p>
+            <ul class="space-y-3 text-xs text-zinc-300 mb-8">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandYellow"></i> Birebir özel antrenör desteği</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandYellow"></i> Kişiye özel egzersiz ve beslenme planı</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandYellow"></i> Doğru form ve anlık hareket düzeltme</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandYellow"></i> Düzenli gelişim & metrik ölçümleri</li>
+            </ul>
+          </div>
+          <div>
+            <a href="https://wa.me/905426959502?text=Merhaba%20Ramazan%20Hocam%2C%20birebir%20Personal%20Training%20(PT)%20paketleri%20hakk%C4%B1nda%20g%C3%B6r%C3%BC%C5%9Fmek%20istiyorum." 
+               target="_blank" 
+               class="btn-dark w-full py-3 rounded-lg text-xs">
+              <i class="fa-brands fa-whatsapp text-sm text-brandYellow"></i>
+              <span>PT Bilgisi Al</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bilgilendirme Notu -->
+      <div class="mt-12 text-center text-xs text-zinc-500 max-w-2xl mx-auto">
+        <i class="fa-solid fa-shield-halved text-brandYellow mr-1"></i>
+        ARK Fitness Center şeffaf ve kaliteli hizmet politikasını benimser. Üyelik şartları ve dönemsel kampanyalar için salonumuzu ziyaret edebilir ya da telefonla doğrudan ulaşabilirsiniz.
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       RESMİ DUYURULAR & GÖRSEL GALERİ
+       ========================================================================== -->
+  <section id="galeri" class="py-24 bg-zinc-950 border-t border-zinc-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold tracking-[0.25em] text-brandYellow uppercase">
+          RESMİ MATERYALLER & AFİŞLER
+        </span>
+        <h2 class="font-heading text-3xl sm:text-5xl font-extrabold uppercase mt-2 mb-4 text-white">
+          SALON BİLGİLENDİRME <span class="text-brandYellow">GALERİSİ</span>
+        </h2>
+        <div class="w-16 h-1 bg-brandYellow mx-auto mb-6"></div>
+        <p class="text-zinc-400 text-sm sm:text-base">
+          ARK Fitness Center'ın resmi paylaşımları, antrenman rehberleri ve seans duyurularını aşağıdan orijinal haliyle büyüterek inceleyebilirsiniz.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+        
+        <!-- Galeri Öğe 1 -->
+        <div class="ark-card rounded-xl overflow-hidden group cursor-pointer aspect-square relative" 
+             onclick="document.querySelector('#trigger-1').click()">
+          <img src="assets/images/logo.jpg" alt="ARK Fitness Logo" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+          <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center p-2 text-center">
+            <span class="text-[11px] font-heading font-bold text-brandYellow uppercase">Resmi Logo</span>
+          </div>
+          <button id="trigger-1" class="lightbox-trigger hidden" data-full-src="assets/images/logo.jpg" data-caption="ARK Fitness Center Resmi Logosu"></button>
+        </div>
+
+        <!-- Galeri Öğe 2 -->
+        <div class="ark-card rounded-xl overflow-hidden group cursor-pointer aspect-square relative" 
+             onclick="document.querySelector('#trigger-2').click()">
+          <img src="assets/images/seans-kadin.jpg" alt="Bayan Seansları" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+          <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center p-2 text-center">
+            <span class="text-[11px] font-heading font-bold text-pink-400 uppercase">Bayan Seansları</span>
+          </div>
+          <button id="trigger-2" class="lightbox-trigger hidden" data-full-src="assets/images/seans-kadin.jpg" data-caption="ARK Fitness Center - Bayan Seansları"></button>
+        </div>
+
+        <!-- Galeri Öğe 3 -->
+        <div class="ark-card rounded-xl overflow-hidden group cursor-pointer aspect-square relative" 
+             onclick="document.querySelector('#trigger-3').click()">
+          <img src="assets/images/seans-erkek.jpg" alt="Erkek Seansları" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+          <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center p-2 text-center">
+            <span class="text-[11px] font-heading font-bold text-blue-400 uppercase">Erkek Seansları</span>
+          </div>
+          <button id="trigger-3" class="lightbox-trigger hidden" data-full-src="assets/images/seans-erkek.jpg" data-caption="ARK Fitness Center - Erkek Seansları"></button>
+        </div>
+
+        <!-- Galeri Öğe 4 -->
+        <div class="ark-card rounded-xl overflow-hidden group cursor-pointer aspect-square relative" 
+             onclick="document.querySelector('#trigger-4').click()">
+          <img src="assets/images/salon-kurallari.jpg" alt="Salon Kurallarımız" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+          <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center p-2 text-center">
+            <span class="text-[11px] font-heading font-bold text-brandYellow uppercase">Salon Kuralları</span>
+          </div>
+          <button id="trigger-4" class="lightbox-trigger hidden" data-full-src="assets/images/salon-kurallari.jpg" data-caption="ARK Fitness Center - Salon Kurallarımız"></button>
+        </div>
+
+        <!-- Galeri Öğe 5 -->
+        <div class="ark-card rounded-xl overflow-hidden group cursor-pointer aspect-square relative" 
+             onclick="document.querySelector('#trigger-5').click()">
+          <img src="assets/images/hakkimizda-biz-kimiz.jpg" alt="Biz Kimiz?" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+          <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center p-2 text-center">
+            <span class="text-[11px] font-heading font-bold text-white uppercase">Biz Kimiz?</span>
+          </div>
+          <button id="trigger-5" class="lightbox-trigger hidden" data-full-src="assets/images/hakkimizda-biz-kimiz.jpg" data-caption="ARK Fitness Center - Biz Kimiz? Kurumsal"></button>
+        </div>
+
+        <!-- Galeri Öğe 6 -->
+        <div class="ark-card rounded-xl overflow-hidden group cursor-pointer aspect-square relative" 
+             onclick="document.querySelector('#trigger-6').click()">
+          <img src="assets/images/vucut-gelistirme.jpg" alt="Vücut Geliştirme" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+          <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center p-2 text-center">
+            <span class="text-[11px] font-heading font-bold text-brandYellow uppercase">Vücut Geliştirme</span>
+          </div>
+          <button id="trigger-6" class="lightbox-trigger hidden" data-full-src="assets/images/vucut-gelistirme.jpg" data-caption="ARK Fitness Center - Vücut Geliştirme Rehberi"></button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SIKÇA SORULAN SORULAR (FAQ ACCORDION)
+       ========================================================================== -->
+  <section class="py-24 bg-brandBlack border-t border-zinc-900">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-14">
+        <span class="text-xs font-bold tracking-[0.25em] text-brandYellow uppercase">
+          MERAK EDİLENLER
+        </span>
+        <h2 class="font-heading text-3xl sm:text-5xl font-extrabold uppercase mt-2 mb-4 text-white">
+          SIKÇA SORULAN <span class="text-brandYellow">SORULAR</span>
+        </h2>
+        <div class="w-16 h-1 bg-brandYellow mx-auto"></div>
+      </div>
+
+      <div class="space-y-4">
+        
+        <!-- Soru 1 -->
+        <div class="faq-item ark-card rounded-xl px-6">
+          <div class="faq-question text-white text-base sm:text-lg">
+            <span>Kadın ve erkek seansları nasıl ayrılmıştır?</span>
+            <i class="fa-solid fa-chevron-down faq-icon transition-transform duration-300 text-zinc-400"></i>
+          </div>
+          <div class="faq-answer text-sm leading-relaxed text-zinc-400">
+            Salonumuzda haftanın 6 günü kadın ve erkek üyelerimiz için net zaman aralıkları belirlenmiştir. Pzt, Çar, Cum günleri gündüz 10:00-13:00 kadın, 13:30-24:00 erkek seansıdır. Salı, Perşembe ve Cumartesi günleri ise hem gündüz (10:00-13:00) hem de akşam (18:00-21:00) kadın seansı; 13:30-17:30 ve 21:30-24:00 saatlerinde ise erkek seansı uygulanmaktadır.
+          </div>
+        </div>
+
+        <!-- Soru 2 -->
+        <div class="faq-item ark-card rounded-xl px-6">
+          <div class="faq-question text-white text-base sm:text-lg">
+            <span>Salona gelirken yanımda ne getirmeliyim?</span>
+            <i class="fa-solid fa-chevron-down faq-icon transition-transform duration-300 text-zinc-400"></i>
+          </div>
+          <div class="faq-answer text-sm leading-relaxed text-zinc-400">
+            Salon kurallarımız gereğince tüm üyelerimizin temiz tabanlı iç mekan spor ayakkabısı ve ter silmek/makineleri korumak için kişisel spor havlusu getirmesi zorunludur. Rahat spor kıyafetleri ve suyunuzu almayı unutmayınız.
+          </div>
+        </div>
+
+        <!-- Soru 3 -->
+        <div class="faq-item ark-card rounded-xl px-6">
+          <div class="faq-question text-white text-base sm:text-lg">
+            <span>Daha önce hiç ağırlık çalışmadım, antrenör desteği alabilir miyim?</span>
+            <i class="fa-solid fa-chevron-down faq-icon transition-transform duration-300 text-zinc-400"></i>
+          </div>
+          <div class="faq-answer text-sm leading-relaxed text-zinc-400">
+            Kesinlikle! Tesisimizin kurucusu Ramazan KARAÇELİK, Selçuk Üniversitesi Beden Eğitimi Akademisi yüksek lisans mezunu olup 3. Kademe Kıdemli Antrenör belgesine sahiptir. Başlangıçta seviyenize uygun yönlendirme ve hareket teknikleri gösterilmekte; ayrıca arzu eden üyelerimiz için birebir Personal Training (PT) koçluğu sunulmaktadır.
+          </div>
+        </div>
+
+        <!-- Soru 4 -->
+        <div class="faq-item ark-card rounded-xl px-6">
+          <div class="faq-question text-white text-base sm:text-lg">
+            <span>Pazar günleri salon açık mı?</span>
+            <i class="fa-solid fa-chevron-down faq-icon transition-transform duration-300 text-zinc-400"></i>
+          </div>
+          <div class="faq-answer text-sm leading-relaxed text-zinc-400">
+            Hayır, haftalık bakım, dezenfeksiyon ve dinlenme nedeniyle pazar günleri tesisimiz kapalıdır. Pazartesi sabahı saat 10:00 itibarıyla kadın seansıyla haftaya yeniden başlanmaktadır.
+          </div>
+        </div>
+
+        <!-- Soru 5 -->
+        <div class="faq-item ark-card rounded-xl px-6">
+          <div class="faq-question text-white text-base sm:text-lg">
+            <span>Kayıt ve üyelik işlemleri nasıl yapılıyor?</span>
+            <i class="fa-solid fa-chevron-down faq-icon transition-transform duration-300 text-zinc-400"></i>
+          </div>
+          <div class="faq-answer text-sm leading-relaxed text-zinc-400">
+            Kayıt olmak için doğrudan salonumuza gelebilir veya WhatsApp hattımız üzerinden (+90 542 695 95 02) dilediğiniz zaman ön bilgi alarak randevulaşabilirsiniz. Kayıt sırasında kimlik belgeniz yeterlidir.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       İLETİŞİM, FORM VE HARİTA (BEYŞEHİR / KONYA)
+       ========================================================================== -->
+  <section id="iletisim" class="py-24 bg-zinc-950 border-t border-zinc-900 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold tracking-[0.25em] text-brandYellow uppercase">
+          BİZE ULAŞIN
+        </span>
+        <h2 class="font-heading text-3xl sm:text-5xl font-extrabold uppercase mt-2 mb-4 text-white">
+          İLETİŞİM VE <span class="text-brandYellow">KONUM</span>
+        </h2>
+        <div class="w-16 h-1 bg-brandYellow mx-auto mb-6"></div>
+        <p class="text-zinc-400 text-sm sm:text-base">
+          Sorularınız, üyelik bilgileri veya antrenman randevusu için bize doğrudan ulaşabilirsiniz.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        
+        <!-- İletişim Bilgileri Kartları (5 Kolon) -->
+        <div class="lg:col-span-5 space-y-6">
+          
+          <!-- Telefon Kartı -->
+          <a href="tel:+905426959502" class="ark-card rounded-2xl p-6 border border-zinc-800 flex items-center gap-5 hover:border-brandYellow transition block group">
+            <div class="w-14 h-14 rounded-xl bg-brandYellow/10 border border-brandYellow/30 flex items-center justify-center text-brandYellow text-2xl group-hover:scale-110 transition flex-shrink-0">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div>
+              <div class="text-xs text-zinc-400 font-semibold uppercase tracking-wider">Telefon Hattı</div>
+              <div class="font-heading text-xl font-bold text-white group-hover:text-brandYellow transition">
+                +90 542 695 95 02
+              </div>
+              <div class="text-xs text-zinc-500 mt-0.5">Tıklayarak doğrudan arayın</div>
+            </div>
+          </a>
+
+          <!-- WhatsApp Kartı -->
+          <a href="https://wa.me/905426959502?text=Merhaba%20ARK%20Fitness%20Center%2C%20bilgi%20almak%20istiyorum." 
+             target="_blank" 
+             class="ark-card rounded-2xl p-6 border border-zinc-800 flex items-center gap-5 hover:border-green-500 transition block group">
+            <div class="w-14 h-14 rounded-xl bg-green-500/10 border border-green-500/30 flex items-center justify-center text-green-400 text-2xl group-hover:scale-110 transition flex-shrink-0">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <div>
+              <div class="text-xs text-zinc-400 font-semibold uppercase tracking-wider">Resmi WhatsApp Hattı</div>
+              <div class="font-heading text-xl font-bold text-white group-hover:text-green-400 transition">
+                +90 542 695 95 02
+              </div>
+              <div class="text-xs text-zinc-500 mt-0.5">Hızlı mesaj başlatın</div>
+            </div>
+          </a>
+
+          <!-- Konum Kartı -->
+          <div class="ark-card rounded-2xl p-6 border border-zinc-800 flex items-center gap-5">
+            <div class="w-14 h-14 rounded-xl bg-brandYellow/10 border border-brandYellow/30 flex items-center justify-center text-brandYellow text-2xl flex-shrink-0">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <div class="text-xs text-zinc-400 font-semibold uppercase tracking-wider">Salon Konumu</div>
+              <div class="font-heading text-xl font-bold text-white">
+                Beyşehir, Konya
+              </div>
+              <div class="text-xs text-zinc-400 mt-0.5">Türkiye</div>
+            </div>
+          </div>
+
+          <!-- Çalışma Saatleri Özeti -->
+          <div class="ark-card rounded-2xl p-6 border border-zinc-800">
+            <div class="font-heading text-lg font-bold text-white mb-3 flex items-center gap-2">
+              <i class="fa-regular fa-clock text-brandYellow"></i> Çalışma Günleri
+            </div>
+            <div class="space-y-2 text-xs text-zinc-300">
+              <div class="flex justify-between pb-1.5 border-b border-zinc-800/60">
+                <span class="text-zinc-400">Pazartesi - Cumartesi:</span>
+                <span class="font-bold text-white">10:00 - 24:00 (Seanslı)</span>
+              </div>
+              <div class="flex justify-between pt-1">
+                <span class="text-zinc-400">Pazar Günü:</span>
+                <span class="font-bold text-red-400">KAPALI</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Hızlı İletişim Formu ve Harita (7 Kolon) -->
+        <div class="lg:col-span-7 space-y-6">
+          
+          <!-- Hızlı Mesaj Gönder Formu -->
+          <div class="ark-card rounded-2xl p-6 sm:p-8 border border-zinc-800">
+            <h3 class="font-heading text-2xl font-bold text-white mb-2">
+              BİZE <span class="text-brandYellow">MESAJ BIRAKIN</span>
+            </h3>
+            <p class="text-xs text-zinc-400 mb-6">
+              Aşağıdaki formu doldurduğunuzda mesajınız otomatik olarak WhatsApp hattımıza aktarılacaktır.
+            </p>
+
+            <form id="quickContactForm" class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs uppercase font-bold text-zinc-300 tracking-wider mb-1.5">Adınız Soyadınız *</label>
+                  <input type="text" name="fullName" required placeholder="Örn: Ahmet Yılmaz" 
+                         class="w-full bg-zinc-900 border border-zinc-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brandYellow">
+                </div>
+                <div>
+                  <label class="block text-xs uppercase font-bold text-zinc-300 tracking-wider mb-1.5">Telefon Numaranız *</label>
+                  <input type="tel" name="phone" required placeholder="05XX XXX XX XX" 
+                         class="w-full bg-zinc-900 border border-zinc-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brandYellow">
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs uppercase font-bold text-zinc-300 tracking-wider mb-1.5">İlgilendiğiniz Alan</label>
+                <select name="service" class="w-full bg-zinc-900 border border-zinc-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brandYellow">
+                  <option value="Erkek Seansları & Üyelik">Erkek Seansları & Genel Üyelik</option>
+                  <option value="Bayan Seansları (Pilates, Zumba, Fitness)">Bayan Seansları (Pilates, Zumba, Fitness)</option>
+                  <option value="Birebir Personal Training (Özel Antrenör)">Birebir Personal Training (Özel Antrenör)</option>
+                  <option value="Kilo Verme / Kilo Alma Programı">Kilo Verme / Kilo Alma Programı</option>
+                  <option value="Diğer / Genel Bilgi">Diğer / Genel Bilgi</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs uppercase font-bold text-zinc-300 tracking-wider mb-1.5">Mesajınız (Opsiyonel)</label>
+                <textarea name="message" rows="3" placeholder="Sormak istediğiniz soruları buraya yazabilirsiniz..." 
+                          class="w-full bg-zinc-900 border border-zinc-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brandYellow"></textarea>
+              </div>
+
+              <button type="submit" class="btn-gold w-full py-3.5 rounded-lg text-sm shadow-xl">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Mesajı WhatsApp ile İlet</span>
+              </button>
+            </form>
+          </div>
+
+          <!-- İnteraktif Harita Embed (Beyşehir) -->
+          <div class="ark-card rounded-2xl overflow-hidden border border-zinc-800 h-64 relative shadow-lg">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50893.22019747863!2d31.688329618588527!3d37.678457859345224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d021c170a4a621%3A0xe54e2f38d3fe2ff1!2zQmV5xZ9laGlyLCBLb255YQ!5e0!3m2!1str!2str!4v1700000000000!5m2!1str!2str" 
+              class="w-full h-full border-0 filter grayscale invert contrast-125" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <div class="absolute bottom-3 left-3 bg-black/90 px-3 py-1.5 rounded-lg border border-brandBorder text-[11px] text-zinc-300 flex items-center gap-1.5">
+              <i class="fa-solid fa-location-dot text-brandYellow"></i> Beyşehir / Konya
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER (ALT BİLGİ ALANI)
+       ========================================================================== -->
+  <footer class="bg-black border-t border-zinc-900 pt-16 pb-12 text-zinc-400 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        
+        <!-- Logo ve Hakkında -->
+        <div class="lg:col-span-1">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="assets/images/logo.jpg" alt="ARK Fitness Logo" class="w-12 h-12 rounded-full border border-brandYellow">
+            <div>
+              <div class="font-heading text-xl font-bold tracking-wider text-white">
+                ARK <span class="text-brandYellow">FITNESS</span>
+              </div>
+              <div class="text-[10px] tracking-[0.2em] text-zinc-500 uppercase">CENTER • BEYŞEHİR</div>
+            </div>
+          </div>
+          <p class="text-xs text-zinc-400 leading-relaxed mb-4">
+            2014 yılında kurulmuş ve faaliyete başlamıştır. Uzman antrenörlerle birebir çalışma fırsatıyla şehrin tek profesyonel spor tesisidir.
+          </p>
+          <div class="text-xs text-zinc-300 font-semibold">
+            Kurucu: Ramazan KARAÇELİK <br>
+            <span class="text-zinc-500 font-normal">3. Kademe Kıdemli Antrenör</span>
+          </div>
+        </div>
+
+        <!-- Hızlı Bağlantılar -->
+        <div>
+          <h4 class="font-heading text-base font-bold text-white uppercase tracking-wider mb-4 border-b border-zinc-800 pb-2">
+            Hızlı Menü
+          </h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#hero" class="hover:text-brandYellow transition">Ana Sayfa</a></li>
+            <li><a href="#seanslar" class="hover:text-brandYellow transition">Haftalık Seans Saatleri</a></li>
+            <li><a href="#hakkimizda" class="hover:text-brandYellow transition">Hakkımızda & Kurucu</a></li>
+            <li><a href="#hizmetler" class="hover:text-brandYellow transition">Branşlarımız & Hizmetler</a></li>
+            <li><a href="#kurallar" class="hover:text-brandYellow transition">Salon Kurallarımız</a></li>
+            <li><a href="#hesaplayici" class="hover:text-brandYellow transition">BMI & Kalori Hesapla</a></li>
+            <li><a href="#uyelik" class="hover:text-brandYellow transition">Üyelik Paketleri</a></li>
+          </ul>
+        </div>
+
+        <!-- Seans Saatleri Özeti -->
+        <div>
+          <h4 class="font-heading text-base font-bold text-white uppercase tracking-wider mb-4 border-b border-zinc-800 pb-2">
+            Seans Özeti
+          </h4>
+          <ul class="space-y-2 text-xs text-zinc-400">
+            <li>
+              <strong class="text-pink-400 block font-semibold">Bayan Seansları:</strong>
+              Pzt-Çar-Cum: 10:00 - 13:00 <br>
+              Sal-Per-Cmt: 10:00 - 13:00 / 18:00 - 21:00
+            </li>
+            <li class="pt-2">
+              <strong class="text-blue-400 block font-semibold">Erkek Seansları:</strong>
+              Pzt-Çar-Cum: 13:30 - 24:00 <br>
+              Sal-Per-Cmt: 13:30 - 17:30 / 21:30 - 24:00
+            </li>
+            <li class="pt-1 text-red-400 font-semibold">
+              Pazar Günleri: KAPALI
+            </li>
+          </ul>
+        </div>
+
+        <!-- İletişim & Konum -->
+        <div>
+          <h4 class="font-heading text-base font-bold text-white uppercase tracking-wider mb-4 border-b border-zinc-800 pb-2">
+            İletişim
+          </h4>
+          <ul class="space-y-3 text-xs">
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-location-dot text-brandYellow"></i>
+              <span>Beyşehir, Konya, Türkiye</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-phone text-brandYellow"></i>
+              <a href="tel:+905426959502" class="hover:text-brandYellow transition">+90 542 695 95 02</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fa-brands fa-whatsapp text-green-400"></i>
+              <a href="https://wa.me/905426959502" target="_blank" class="hover:text-green-400 transition">+90 542 695 95 02</a>
+            </li>
+            <li class="pt-2">
+              <a href="https://wa.me/905426959502?text=Merhaba%2C%20ARK%20Fitness%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." 
+                 target="_blank" 
+                 class="btn-gold px-4 py-2 rounded-lg text-xs w-full text-center block">
+                WhatsApp ile İletişim Kur
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Telif ve Alt Çizgi -->
+      <div class="border-t border-zinc-900 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-zinc-400">
+        <p>© 2014 - 2026 ARK Fitness Center. Tüm Hakları Saklıdır.</p>
+        <p class="text-zinc-400 font-mono">Beyşehir'in Güç ve Sağlık Merkezi</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       SABİT FLOATING WHATSAPP BUTONU
+       ========================================================================== -->
+  <a href="https://wa.me/905426959502?text=Merhaba%20ARK%20Fitness%20Center%2C%20seanslar%20ve%20%C3%BCyelik%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." 
+     target="_blank" 
+     class="floating-whatsapp"
+     aria-label="WhatsApp Destek Hattı">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="hidden sm:inline">WhatsApp ile Yazın</span>
+  </a>
+
+  <!-- ==========================================================================
+       RESMİ AFİŞ LIGHTBOX MODAL
+       ========================================================================== -->
+  <div id="imageModal" class="modal-overlay">
+    <div class="modal-content relative p-4 sm:p-6 flex flex-col items-center">
+      <button id="modalClose" class="absolute top-3 right-3 sm:top-4 sm:right-4 w-10 h-10 rounded-full bg-zinc-800 text-white hover:text-brandYellow hover:bg-zinc-700 transition flex items-center justify-center text-lg z-10">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="w-full flex justify-center mb-3">
+        <img id="modalImage" src="" alt="ARK Fitness Büyütülmüş Görsel" class="max-h-[75vh] w-auto object-contain rounded-lg shadow-2xl">
+      </div>
+      <div id="modalCaption" class="text-center font-heading text-sm sm:text-base text-zinc-300 uppercase tracking-wider">
+        ARK Fitness Center
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
